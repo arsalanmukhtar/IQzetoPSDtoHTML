@@ -1,0 +1,218 @@
+body {
+  font-family: "Barlow Semi Condensed";
+}
+ul {
+  list-style: none !important;
+}
+textarea:hover, input:hover, textarea:focus, input:focus {
+  background-color: #e9faf2 !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+
+/* ------------------------------------------------------- topsection styling ------------------------------------------------------- */
+
+.top-section {
+  background-color: #5cd89f;
+  height: 70vh;
+}
+.top-section .heading h1 {
+  padding: 150px 0px 0px 150px;
+  font-weight: 900;
+}
+.top-section .heading p {
+  padding: 0px 150px 0px 150px;
+}
+
+/* ------------------------------------------------------- contact section styling ------------------------------------------------------- */
+
+.contactus {
+  padding-top: 100px;
+  min-height: 100vh;
+  background: #fff;
+}
+.contactus .container {
+  min-width: 1100px;
+  min-height: 550px;
+  z-index: 1000;
+}
+.contactus .container .contact-info {
+  border-radius: 25px;
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100%-80px);
+  background: #255942;
+  display: flex;
+  padding: 40px;
+  z-index: 1;
+  justify-self: start;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0px 3px 16.56px 1.44px rgba(38, 89, 66, 0.32);
+}
+.contactus .container .contact-info h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.contactus .container .contact-info .info {
+  position: relative;
+  margin: 20px 0px;
+}
+.contactus .container .contact-info .info li {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;
+  align-items: flex-start;
+}
+.contactus .container .contact-info .info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+  filter: invert(1);
+  opacity: 0.5;
+}
+.contactus .container .contact-info .info li span:nth-child(2) {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300px;
+  opacity: 0.5;
+}
+.contactus .container .contact-info .info li:hover span:nth-child(1),
+.contactus .container .contact-info .info li:hover span:nth-child(2) {
+  opacity: 1;
+}
+.contactus .contact-info .sci {
+  position: relative;
+  display: flex;
+}
+.contactus .contact-info .sci li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+.contactus .contact-info .sci li a {
+  text-decoration: none;
+}
+.contactus .contact-info .sci li a i {
+  color: #fff;
+  opacity: 0.5; 
+}
+.contactus .contact-info .sci li:hover a i {
+  opacity: 1;
+}
+.contactus .contact-form {
+  border-radius: 25px;
+  position: absolute;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 200px;
+  padding-left: 250px;
+  width: calc(100%-20px);
+  height: 100%;
+  box-shadow: 0px 3px 16.56px 1.44px rgba(38, 89, 66, 0.32);
+}
+.contactus .contact-form h2 {
+  color: #255942;
+  font-weight: 500;
+  font-size: 24px;
+}
+.contactus .contact-form .formbox {
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.contactus .contact-form .formbox .inputbox {
+  position: relative;
+  margin: 0px 0px 35px 0px;
+}
+ .contactus .contact-form .formbox .inputbox.w50 {
+  width: 47%;
+}
+.contactus .contact-form .formbox .inputbox.w100 {
+  width: 100%;
+}
+.contactus .contact-form .formbox .inputbox input,
+.contactus .contact-form .formbox .inputbox textarea,
+.contactus .contact-form .formbox .inputbox select {
+  width: 100% !important;
+  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+}
+.contactus .contact-form .formbox .inputbox textarea {
+  min-width: 150px;
+} 
+.contactus .contact-form .formbox .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.contactus .contact-form .formbox .inputbox input:focus ~ span,
+.contactus .contact-form .formbox .inputbox textarea:focus ~ span,
+.contactus .contact-form .formbox .inputbox input:valid ~ span,
+.contactus .contact-form .formbox .inputbox textarea:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #429970;
+}
+.contactus .contact-form .formbox .inputbox input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background: #255942;
+  color: #fff;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+}
+.contactus .contact-form .formbox .inputbox input[type="submit"]:hover {
+  background-color: #429970 !important;
+}
+
+/* ------------------------------------------------------- footer styling ------------------------------------------------------- */
+
+footer {
+  background: #5cd89f;
+  color: #fff;
+  padding: 30px;
+}
+.footer-top {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-top p:hover {
+   color: #255942;
+   font-weight: bold;
+   cursor: pointer;
+}
+.footer-support, .footer-links, .footer-address {
+   visibility: visible;
+   animation-name: fadeInUp;
+}
+.footer-payment img {
+   margin-top: 20px;
+   width: 43%;
+}
+.footer-payment img:hover {
+   cursor: pointer;
+}
+.footer-bottom .footer-social i {
+   margin: 10px;
+   font-size: 30px;
+   color: #fff;
+}
+.footer-bottom .footer-social i:hover {
+   color: #255942;
+   text-shadow: 0 0 15px #255942;
+   transition: all 0.2s ease;
+}

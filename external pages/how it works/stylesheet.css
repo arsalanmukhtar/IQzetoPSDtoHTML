@@ -1,0 +1,218 @@
+body {
+  font-family: "Barlow Semi Condensed";
+}
+ul {
+  list-style: none !important;
+}
+textarea:hover, input:hover, textarea:focus, input:focus {
+  background-color: #e9faf2 !important;
+  border-width: 2px !important;
+  border-radius: 5px !important;
+}
+.dark-button {
+  background: #255942 !important;
+  height: 40px !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  display: block !important;
+}
+
+/* ------------------------------------------------------- topsection styling ------------------------------------------------------- */
+
+.top-section {
+  background-color: #5cd89f;
+  height: 70vh;
+}
+.top-section .heading h1 {
+  padding: 150px 0px 0px 150px;
+  font-weight: 900;
+}
+.top-section .heading p {
+  padding: 0px 150px 0px 150px;
+}
+
+/* ------------------------------------------------------- middle section styling ------------------------------------------------------- */
+
+.navigation-tab li a {
+   color: #5cd89f;
+}
+.navigation-tab li a:hover {
+   color: #255942;
+   background: #aeeccf;
+   border-radius: 5px;
+}
+.layout_padding {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.heading_main span {
+  color: #5cd89f;
+}
+.heading_main h2 {
+  color: #255942;
+}
+.center_head_border h2:after,
+.center_head_border:after {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.heading_style_1 h2::after {
+  width: 110px;
+  height: 5px;
+  background: #ddd;
+  content: "";
+  display: block;
+  margin: 15px 0 30px;
+}
+
+.app-features li {
+  padding-left: 100px;
+  position: relative;
+  margin: 25px 0 0;
+  float: left;
+  border-bottom: dotted 1px #ddd;
+  padding-bottom: 25px;
+}
+.app-features li h4{
+   color: #255942;
+}
+.app-features li p {
+   color: #429970;
+}
+.app-features li > i {
+  position: absolute;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+  font-size: 35px;
+  font-weight: 500;
+  transition: ease all 0.5s;
+  top: 0;
+  border: solid #5cd89f 2px;
+  color: #aeeccf;
+}
+
+.app-features ul li:last-child {
+  border-bottom: none;
+}
+
+.app-features li:hover > i,
+.app-features li:focus > i {
+  background: #aeeccf;
+  border-color: #aeeccf;
+  color: #fff;
+}
+
+.app-features h4 {
+  text-transform: none;
+  font-weight: 500;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------- sidebar styling ------------------------------------------------------- */
+
+#wrapper {
+  overflow-x: hidden;
+  background: #aeeccf;
+  color: #255942;
+}
+#sidebar-wrapper {
+   min-height: 100vh;
+   margin-left: -15rem;
+   -webkit-transition: margin 0.25s ease-out;
+   -moz-transition: margin 0.25s ease-out;
+   -o-transition: margin 0.25s ease-out;
+   transition: margin 0.25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+#sidebar-wrapper .nav-anchor:hover {
+   color: #5cd89f !important;
+   font-weight: bold !important;
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+#sidebar-wrapper .nav-anchor {
+  background-color: none !important;
+  border: none !important;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+.sidebar-div {
+  background: none !important;
+}
+.navbar-toggler-icon {
+  background: url(img/menu.png);
+  background-size: 100%;
+}
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+#navbarSupportedContent a {
+   color: #255942;
+}
+
+/* ------------------------------------------------------- footer styling ------------------------------------------------------- */
+
+footer {
+  background: #5cd89f;
+  color: #fff;
+  padding: 30px;
+}
+.footer-top {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-top p:hover {
+   color: #255942;
+   font-weight: bold;
+   cursor: pointer;
+}
+.footer-support, .footer-links, .footer-address {
+   visibility: visible;
+   animation-name: fadeInUp;
+}
+.footer-payment img {
+   margin-top: 20px;
+   width: 43%;
+}
+.footer-payment img:hover {
+   cursor: pointer;
+}
+.footer-bottom .footer-social i {
+   margin: 10px;
+   font-size: 30px;
+   color: #fff;
+}
+.footer-bottom .footer-social i:hover {
+   color: #255942;
+   text-shadow: 0 0 15px #255942;
+   transition: all 0.2s ease;
+}
